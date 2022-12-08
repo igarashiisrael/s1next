@@ -1,0 +1,6 @@
+.linha-vertical {
+  border-left: 2px solid;
+  box-sizing: border-box;
+  margin: 10px 10px 0 10px;
+  height: 20px;
+}
