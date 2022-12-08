@@ -2,76 +2,579 @@
   <div class="row bg-light d-flex align-items-center">
 
     <mat-tab-group>
-      <div class="abas">
-        <mat-tab label="Consulta">
-          <div>
 
-            <p class="p1"> Consulta </p>
-            <form>
-              <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3">
-                </div>
-              </div>
-              <div class="row mb-3">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3">
-                </div>
-              </div>
-              <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                      checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      First radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      Second radio
-                    </label>
-                  </div>
-                  <div class="form-check disabled">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
-                      disabled>
-                    <label class="form-check-label" for="gridRadios3">
-                      Third disabled radio
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <div class="row mb-3">
-                <div class="col-sm-10 offset-sm-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                    <label class="form-check-label" for="gridCheck1">
-                      Example checkbox
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
-            </form>
+      <mat-tab label="Consulta">
+        <div class="aba-centro">
 
-          </div>
-        </mat-tab>
-      </div>
+          <p class="p1"> Por favor, preencha os campos abaixo e pressione o botão 'Salvar' para criar um novo relatório
+            de Evolução Fisioterapia. Pressione 'Cancelar' para retornar a tela anterior. </p>
+          <form>
+
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Início da consulta</label>
+              <div class="col-sm-10">
+                <input type="datetime-local" class="form-control" id="date">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Término da consulta</label>
+              <div class="col-sm-10">
+                <input type="datetime-local" class="form-control" id="date">
+              </div>
+            </div>
+
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Vista</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                    checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Agendada
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Intercorrência
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                  <label class="form-check-label" for="gridRadios3">
+                    Admissão
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div> -->
+
+
+            <!--             <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Example checkbox
+                  </label>
+                </div>
+              </div>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+
+        </div>
+      </mat-tab>
+
 
       <!-- TERMINA A PRIMEIRA ABA  -->
-      <mat-tab label="Second"> Content 2 </mat-tab>
+      <mat-tab label="Neurologia">
+
+        <!-- DIV PARA ALINHAMENTO -->
+        <div class="aba-centro">
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Orientação</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Orientado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Desorientado
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Consiência</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Consciente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Alerta
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Sonolento
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Comatoso
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Emocional</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Calmo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Agressivo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Agitado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Letargico
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A TEXTBOX -->
+
+          <div class="input-group">
+            <legend class="col-form-label col-sm-2 pt-0">Observações</legend>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+          <!-- FINALIZA A TEXTBOX -->
+
+
+
+        </div>
+      </mat-tab>
 
       <!-- TERMINA A SEGUNDA ABA  -->
 
-      <mat-tab label="Third"> Content 3 </mat-tab>
+      <mat-tab label="Respiratório">
+
+        <div class="aba-centro">
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tipo de Respiração</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Eupneico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Dispneico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Taquipneico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Outros
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Expansibilidade</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Normal
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Aumentada
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Diminuída
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Simétrica
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option6">
+                <label class="form-check-label" for="gridRadios6">
+                  Assimétrica
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tosse</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Improdutiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Produtiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Eficaz
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option6">
+                <label class="form-check-label" for="gridRadios6">
+                  Ineficaz
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value="option7">
+                <label class="form-check-label" for="gridRadios7">
+                  Assistida
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Padrão Musc. Resp.</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Torácico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Toracoabdominal
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Abdominal
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Ritmo</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Regular
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Irregular
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Ausculta</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Murmúrios Vesiculares Fisiológico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Roncos
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Sibilos
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Crepitação
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Esforço</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Leve
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Moderado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Intenso
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Dispneia</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Esforços Maiores
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Esforços Mínimos
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Esforços Habituais
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Repouso
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option6">
+                <label class="form-check-label" for="gridRadios6">
+                  Ausente
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+        </div>
+      </mat-tab>
 
       <!-- TERMINA A TERCEIRA ABA  -->
 
-      <mat-tab label="Quarto"> Content 4 </mat-tab>
+      <mat-tab label="Secreção">
+
+        <div class="aba-centro">
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tipo de Secreção</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  Fluida
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  Semi Espessa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  Espessa
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+
+
+
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+
+        </div>
+
+      </mat-tab>
 
       <!-- TERMINA A QUARTA ABA  -->
 

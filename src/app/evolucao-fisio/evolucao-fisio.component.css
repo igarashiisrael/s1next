@@ -1,7 +1,13 @@
-.center {
-  text-align: center;
+.aba-centro {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5%;
 }
 
-body {
-  background-color: aqua;
+input {
+  max-width: 450px;
+}
+
+.p1 {
+  margin-top: 50px;
 }
