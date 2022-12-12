@@ -581,16 +581,337 @@
 
 
 
+          <!-- Inicia a text box -->
 
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Cor</legend>
+            <input type="text" class="form-control" id="inputCor">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Quantidade</legend>
+            <input type="text" class="form-control" id="inputQuantidade">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Nº Aspirações</legend>
+            <input type="number" class="form-control" id="inputAspiracao" placeholder="número inteiro">
+          </div>
+
+          <!-- ENCERRA a text box -->
 
           <!-- COMEÇA A LINHA DE BUTTONS -->
 
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Dispositivos</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos1" value="option1"
+                  checked>
+                <label class="form-check-label" for="dispositivos1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos2" value="option2">
+                <label class="form-check-label" for="dispositivos2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos3" value="option3">
+                <label class="form-check-label" for="dispositivos3">
+                  TQT
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos4" value="option4">
+                <label class="form-check-label" for="dispositivos4">
+                  Cateter02
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos5" value="option5">
+                <label class="form-check-label" for="dispositivos5">
+                  Máscara Facial
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos6" value="option6">
+                <label class="form-check-label" for="dispositivos6">
+                  VM Não Invasiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos7" value="option7">
+                <label class="form-check-label" for="dispositivos7">
+                  VM Invasiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos8" value="option8">
+                <label class="form-check-label" for="dispositivos8">
+                  Outros
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Modelo</legend>
+            <input type="text" class="form-control" id="inputModelo">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">P. insp</legend>
+            <input type="text" class="form-control" id="inputPInsp">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Modo Vent.</legend>
+            <input type="text" class="form-control" id="inputModoVent">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">PEEP</legend>
+            <input type="text" class="form-control" id="inputPEEP">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">VC</legend>
+            <input type="text" class="form-control" id="inputVC">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">V. Min</legend>
+            <input type="text" class="form-control" id="inputVMin">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- COMEÇA A TEXTBOX -->
+
+          <div class="input-group  mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Observações</legend>
+
+            <textarea class="form-control" aria-label="With textarea" rows="3"></textarea>
+          </div>
+
+          <!-- FINALIZA A TEXTBOX -->
 
         </div>
 
       </mat-tab>
 
       <!-- TERMINA A QUARTA ABA  -->
+
+      <mat-tab label="Avaliação Motora">
+
+        <!-- INICIA SELECT -->
+
+        <div class="aba-centro">
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Administração</legend>
+            <select class="form-select form-select" aria-label=".form-select example">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Normal</option>
+              <option value="3">Restrista</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalAdm">
+          </div>
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Dor ao movimento</legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idDorMovimento">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Sim</option>
+              <option value="3">Não</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalDorMovimento">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Edema</legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idEdema">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Sim</option>
+              <option value="3">Não</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalEdema">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tônus
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idTonus">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Normal</option>
+              <option value="3">Diminuído</option>
+              <option value="4">Aumentado</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalTonus">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Trofismo Muscular
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idTrofismoMuscular">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Atrofia</option>
+              <option value="3">Hipotrofia</option>
+              <option value="4">Eutrofia</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalTrofismoMuscular">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Força Muscular
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idForcaMuscular">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Normal</option>
+              <option value="3">Reduzida</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalForcaMuscular">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Marcha
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idMarcha">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">com Aux. e com Órteses</option>
+              <option value="3">sem Aux. e com Órteses</option>
+              <option value="4">com Aux. e sem Órteses</option>
+              <option value="5">sem Aux. e sem Órteses</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- COMEÇA A TEXTBOX -->
+
+          <div class="input-group  mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Observações</legend>
+
+            <textarea class="form-control" aria-label="With textarea" rows="3"></textarea>
+          </div>
+
+          <!-- FINALIZA A TEXTBOX -->
+
+        </div>
+
+      </mat-tab>
 
     </mat-tab-group>
   </div>

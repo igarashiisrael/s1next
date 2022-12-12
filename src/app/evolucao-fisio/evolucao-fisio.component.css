@@ -11,3 +11,11 @@ input {
 .p1 {
   margin-top: 50px;
 }
+
+select {
+  max-width: 450px;
+}
+
+textarea {
+  max-width: 450px;
+}
