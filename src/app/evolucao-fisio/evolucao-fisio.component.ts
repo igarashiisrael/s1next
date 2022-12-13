@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-evolucao-fisio',
@@ -7,16 +8,14 @@ import { Component } from '@angular/core';
 
 })
 export class EvolucaoFisioComponent {
+  constructor() {
 
-  menuLists = ['Kid', 'Women', 'Men']
-  selectedList: any
-  constructor() { }
-
-  ngOnInit() {
-    this.selectedList = this.menuLists[0]
   }
 
-  openMenuList(menuList: any) {
-    this.selectedList = menuList
+  isDisplay = false;
+  ControleTronco($event: MatSlideToggleChange) {
+    this.isDisplay = $event.checked
   }
+
+
 }
