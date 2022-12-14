@@ -14,6 +14,7 @@ import { AltaComponent } from './laudo-fisio/alta/alta.component';
 import { AvaliacaoComponent } from './laudo-fisio/avaliacao/avaliacao.component';
 import { ReavaliacaoComponent } from './laudo-fisio/reavaliacao/reavaliacao.component';
 import { LaudoComponent } from './laudo-fisio/laudo/laudo.component';
+import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { LaudoComponent } from './laudo-fisio/laudo/laudo.component';
     AltaComponent,
     AvaliacaoComponent,
     ReavaliacaoComponent,
-    LaudoComponent
+    LaudoComponent,
+    CabecalhoComponent
   ],
   imports: [
     BrowserModule,
