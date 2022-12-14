@@ -1,28 +1,125 @@
 <div class="container">
     <div class="row bg-light d-flex align-items-center">
 
-                <p class="p1"> Por favor, preencha o formulário de Alta e clique no botão OK para criar um registro novo. Clique em Cancelar para retornar à tela anterior </p>
-                <form>
-                    <div class="row mb-3">
-                        <label for="DataAlta" class="col-sm-1 col-form-label">Data da avaliação </label>
-                        <div class="col-sm-3">
-                            <input type="datetime-local" class="form-control" id="dataalta">
+        <p class="p1"> Por favor, preencha o formulário de Alta e clique no botão OK para criar um registro novo. Clique
+            em Cancelar para retornar à tela anterior </p>
+        <form>
+            <div class="row mb-3">
+                <label for="DataAlta" class="col-sm-3 col-form-label">Data da Avaliação </label>
+                <div class="col-sm-3">
+                    <input type="datetime-local" class="form-control" id="dataalta">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="DiagClin" class="col-sm-12 col-form-label">Diagnóstico Clínico</label>
+                    <input type="text" class="form-control" id="diagclin">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="QdrAtual" class="col-sm-10 col-form-label">Quadro Atual</label>
+                    <textarea class="form-control" id="qdratual" aria-label="With textarea" rows="3"></textarea>
+                </div>
+            </div>
+        </form>
+
+            <div class="row mb-3">
+                <label for="Exame">Exame Físico</label>
+                <div class="col-sm-6">
+                    <label for="Edemas" class="col-sm-8 col-form-label">Edemas</label>
+                    <input type="text" class="form-control" id="edemas">
+                </div>
+                <div class="col-sm-6">
+                    <label for="Uceras" class="col-sm-8 col-form-label">Úceras</label>
+                    <input type="text" class="form-control" id="Uceras">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Exame"> Avaliação</label>
+                <form action="">
+
+                <div class="col-sm-12">
+
+                    <label for="Neurologica" class="col-sm-6 col-form-label">Neurológica</label>
+                    <div class="col-sm-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="consciencia" id="consciencia1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="consciencia1">
+                                N/A
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="consciencia" id="consciencia2"
+                                value="option2">
+                            <label class="form-check-label" for="consciencia2">
+                                Consciente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="consciencia" id="consciencia3"
+                                value="option3">
+                            <label class="form-check-label" for="consciencia3">
+                                Alerta
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="consciencia" id="consciencia4"
+                                value="option4">
+                            <label class="form-check-label" for="consciencia4">
+                                Sonolento
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="consciencia" id="consciencia5"
+                                value="option5">
+                            <label class="form-check-label" for="consciencia5">
+                                Comatoso
+                            </label>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <label for="DiagClin" class="col-sm-1 col-form-label">Diagnóstico Clínico</label>
-                            <input type="text" class="form-control" id="diagclin">
-                        </div>
+                   <label for="Neurologica" class="col-sm-6 col-form-label">Motora</label>
+                    <div class="col-sm-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="consciencia" id="consciencia1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="consciencia1">
+                            N/A
+                        </label>
                     </div>
-                    <div class="row mb-6">
-                        <div class="col-sm-12">
-                            <label for="QdrAtual" class="col-sm-10 col-form-label">Quadro Atual</label>
-                            <textarea class="form-control" id ="qdratual" aria-label="With textarea" rows="3"></textarea>
-                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="consciencia" id="consciencia2"
+                            value="option2">
+                        <label class="form-check-label" for="consciencia2">
+                            Consciente
+                        </label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="consciencia" id="consciencia3"
+                            value="option3">
+                        <label class="form-check-label" for="consciencia3">
+                            Alerta
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="consciencia" id="consciencia4"
+                            value="option4">
+                        <label class="form-check-label" for="consciencia4">
+                            Sonolento
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="consciencia" id="consciencia5"
+                            value="option5">
+                        <label class="form-check-label" for="consciencia5">
+                            Comatoso
+                        </label>
+                    </div>
+                </div>
+                </div>
 
 
-                </form>
+        </form>
     </div>
-    </div>
+</div>
