@@ -9,20 +9,34 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
+import { LaudoFisioComponent } from './laudo-fisio/laudo-fisio.component';
+import { SinaisVitaisComponent } from './laudo-fisio/sinais-vitais/sinais-vitais.component';
+import { SinaisVitaisPediatricoComponent } from './laudo-fisio/sinais-vitais-pediatrico/sinais-vitais-pediatrico.component';
+import { AltaComponent } from './laudo-fisio/alta/alta.component';
+import { AvaliacaoComponent } from './laudo-fisio/avaliacao/avaliacao.component';
+import { ReavaliacaoComponent } from './laudo-fisio/reavaliacao/reavaliacao.component';
+import { LaudoComponent } from './laudo-fisio/laudo/laudo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    EvolucaoFisioComponent
+    EvolucaoFisioComponent,
+    LaudoFisioComponent,
+    SinaisVitaisComponent,
+    SinaisVitaisPediatricoComponent,
+    AltaComponent,
+    AvaliacaoComponent,
+    ReavaliacaoComponent,
+    LaudoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
