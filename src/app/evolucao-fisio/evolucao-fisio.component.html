@@ -1,0 +1,918 @@
+<div class="container-fluid">
+  <div class="row bg-light d-flex align-items-center">
+
+    <mat-tab-group>
+
+      <mat-tab label="Consulta">
+        <div class="aba-centro">
+
+          <p class="p1"> Por favor, preencha os campos abaixo e pressione o botão 'Salvar' para criar um novo relatório
+            de Evolução Fisioterapia. Pressione 'Cancelar' para retornar a tela anterior. </p>
+          <form>
+
+            <div class="row mb-3">
+              <label for="inicioConsulta" class="col-sm-2 col-form-label">Início da consulta</label>
+              <div class="col-sm-10">
+                <input type="datetime-local" class="form-control" id="date">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="terminoConsulta" class="col-sm-2 col-form-label">Término da consulta</label>
+              <div class="col-sm-10">
+                <input type="datetime-local" class="form-control" id="date">
+              </div>
+            </div>
+
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Vista</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="tipoConsulta" id="tipoConsulta1" value="option1"
+                    checked>
+                  <label class="form-check-label" for="tipoConsulta1">
+                    Agendada
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="tipoConsulta" id="tipoConsulta2" value="option2">
+                  <label class="form-check-label" for="tipoConsulta2">
+                    Intercorrência
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="tipoConsulta" id="tipoConsulta3" value="option3">
+                  <label class="form-check-label" for="tipoConsulta3">
+                    Admissão
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div> -->
+
+
+            <!--             <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Example checkbox
+                  </label>
+                </div>
+              </div>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+
+        </div>
+      </mat-tab>
+
+
+      <!-- TERMINA A PRIMEIRA ABA  -->
+      <mat-tab label="Neurologia">
+
+        <!-- DIV PARA ALINHAMENTO -->
+        <div class="aba-centro">
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Orientação</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orientacao" id="orientacao1" value="option1" checked>
+                <label class="form-check-label" for="orientacao1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orientacao" id="orientacao2" value="option2">
+                <label class="form-check-label" for="orientacao2">
+                  Orientado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orientacao" id="orientacao3" value="option3">
+                <label class="form-check-label" for="orientacao3">
+                  Desorientado
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Consiência</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="consciencia" id="consciencia1" value="option1"
+                  checked>
+                <label class="form-check-label" for="consciencia1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="consciencia" id="consciencia2" value="option2">
+                <label class="form-check-label" for="consciencia2">
+                  Consciente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="consciencia" id="consciencia3" value="option3">
+                <label class="form-check-label" for="consciencia3">
+                  Alerta
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="consciencia" id="consciencia4" value="option4">
+                <label class="form-check-label" for="consciencia4">
+                  Sonolento
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="consciencia" id="consciencia5" value="option5">
+                <label class="form-check-label" for="consciencia5">
+                  Comatoso
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Emocional</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="emocional" id="emocional1" value="option1" checked>
+                <label class="form-check-label" for="emocional1">
+                  Calmo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="emocional" id="emocional2" value="option2">
+                <label class="form-check-label" for="emocional2">
+                  Agressivo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="emocional" id="emocional3" value="option3">
+                <label class="form-check-label" for="emocional3">
+                  Agitado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="emocional" id="emocional4" value="option4">
+                <label class="form-check-label" for="emocional4">
+                  Letargico
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A TEXTBOX -->
+
+          <div class="input-group">
+            <legend class="col-form-label col-sm-2 pt-0">Observações</legend>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+          <!-- FINALIZA A TEXTBOX -->
+
+
+
+        </div>
+      </mat-tab>
+
+      <!-- TERMINA A SEGUNDA ABA  -->
+
+      <mat-tab label="Respiratório">
+
+        <div class="aba-centro">
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tipo de Respiração</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeRespiracao" id="tipoDeRespiracao1"
+                  value="option1" checked>
+                <label class="form-check-label" for="tipoDeRespiracao1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeRespiracao" id="tipoDeRespiracao2"
+                  value="option2">
+                <label class="form-check-label" for="tipoDeRespiracao2">
+                  Eupneico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeRespiracao" id="tipoDeRespiracao3"
+                  value="option3">
+                <label class="form-check-label" for="tipoDeRespiracao3">
+                  Dispneico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeRespiracao" id="tipoDeRespiracao4"
+                  value="option4">
+                <label class="form-check-label" for="tipoDeRespiracao4">
+                  Taquipneico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeRespiracao" id="tipoDeRespiracao5"
+                  value="option5">
+                <label class="form-check-label" for="tipoDeRespiracao5">
+                  Outros
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Expansibilidade</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="expansibilidade" id="expansibilidade1"
+                  value="option1" checked>
+                <label class="form-check-label" for="expansibilidade1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="expansibilidade" id="expansibilidade2"
+                  value="option2">
+                <label class="form-check-label" for="expansibilidade2">
+                  Normal
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="expansibilidade" id="expansibilidade3"
+                  value="option3">
+                <label class="form-check-label" for="expansibilidade3">
+                  Aumentada
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="expansibilidade" id="expansibilidade4"
+                  value="option4">
+                <label class="form-check-label" for="expansibilidade4">
+                  Diminuída
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="expansibilidade" id="expansibilidade5"
+                  value="option5">
+                <label class="form-check-label" for="expansibilidade5">
+                  Simétrica
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="expansibilidade" id="expansibilidade6"
+                  value="option6">
+                <label class="form-check-label" for="expansibilidade6">
+                  Assimétrica
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tosse</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tosse" id="tosse1" value="option1" checked>
+                <label class="form-check-label" for="tosse1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tosse" id="tosse2" value="option2">
+                <label class="form-check-label" for="tosse2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tosse" id="tosse3" value="option3">
+                <label class="form-check-label" for="tosse3">
+                  Improdutiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tosse" id="tosse4" value="option4">
+                <label class="form-check-label" for="tosse4">
+                  Produtiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tosse" id="tosse5" value="option5">
+                <label class="form-check-label" for="tosse5">
+                  Eficaz
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tosse" id="tosse6" value="option6">
+                <label class="form-check-label" for="tosse6">
+                  Ineficaz
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tosse" id="tosse7" value="option7">
+                <label class="form-check-label" for="tosse7">
+                  Assistida
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Padrão Musc. Resp.</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="padraoMuscResp" id="padraoMuscResp1" value="option1"
+                  checked>
+                <label class="form-check-label" for="padraoMuscResp1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="padraoMuscResp" id="padraoMuscResp2" value="option2">
+                <label class="form-check-label" for="padraoMuscResp2">
+                  Torácico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="padraoMuscResp" id="padraoMuscResp3" value="option3">
+                <label class="form-check-label" for="padraoMuscResp3">
+                  Toracoabdominal
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="padraoMuscResp" id="padraoMuscResp4" value="option4">
+                <label class="form-check-label" for="padraoMuscResp4">
+                  Abdominal
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Ritmo</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ritmo" id="ritmo1" value="option1" checked>
+                <label class="form-check-label" for="ritmo1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ritmo" id="ritmo2" value="option2">
+                <label class="form-check-label" for="ritmo2">
+                  Regular
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ritmo" id="ritmo3" value="option3">
+                <label class="form-check-label" for="ritmo3">
+                  Irregular
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Ausculta</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ausculta" id="ausculta1" value="option1" checked>
+                <label class="form-check-label" for="ausculta1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ausculta" id="ausculta2" value="option2">
+                <label class="form-check-label" for="ausculta2">
+                  Murmúrios Vesiculares Fisiológico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ausculta" id="ausculta3" value="option3">
+                <label class="form-check-label" for="ausculta3">
+                  Roncos
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ausculta" id="ausculta4" value="option4">
+                <label class="form-check-label" for="ausculta4">
+                  Sibilos
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ausculta" id="ausculta5" value="option5">
+                <label class="form-check-label" for="ausculta5">
+                  Crepitação
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Esforço</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="esforco" id="esforco1" value="option1" checked>
+                <label class="form-check-label" for="esforco1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="esforco" id="esforco2" value="option2">
+                <label class="form-check-label" for="esforco2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="esforco" id="esforco3" value="option3">
+                <label class="form-check-label" for="esforco3">
+                  Leve
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="esforco" id="esforco4" value="option4">
+                <label class="form-check-label" for="esforco4">
+                  Moderado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="esforco" id="esforco5" value="option5">
+                <label class="form-check-label" for="esforco5">
+                  Intenso
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Dispneia</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispneia" id="dispneia1" value="option1" checked>
+                <label class="form-check-label" for="dispneia1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispneia" id="dispneia2" value="option2">
+                <label class="form-check-label" for="dispneia2">
+                  Esforços Maiores
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispneia" id="dispneia3" value="option3">
+                <label class="form-check-label" for="dispneia3">
+                  Esforços Mínimos
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispneia" id="dispneia4" value="option4">
+                <label class="form-check-label" for="dispneia4">
+                  Esforços Habituais
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispneia" id="dispneia5" value="option5">
+                <label class="form-check-label" for="dispneia5">
+                  Repouso
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispneia" id="dispneia6" value="option6">
+                <label class="form-check-label" for="dispneia6">
+                  Ausente
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+        </div>
+      </mat-tab>
+
+      <!-- TERMINA A TERCEIRA ABA  -->
+
+      <mat-tab label="Secreção">
+
+        <div class="aba-centro">
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tipo de Secreção</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeSecrecao" id="tipoDeSecrecao1" value="option1"
+                  checked>
+                <label class="form-check-label" for="tipoDeSecrecao1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeSecrecao" id="tipoDeSecrecao2" value="option2">
+                <label class="form-check-label" for="tipoDeSecrecao2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeSecrecao" id="tipoDeSecrecao3" value="option3">
+                <label class="form-check-label" for="tipoDeSecrecao3">
+                  Fluida
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeSecrecao" id="tipoDeSecrecao4" value="option4">
+                <label class="form-check-label" for="tipoDeSecrecao4">
+                  Semi Espessa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoDeSecrecao" id="tipoDeSecrecao5" value="option5">
+                <label class="form-check-label" for="tipoDeSecrecao5">
+                  Espessa
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Cor</legend>
+            <input type="text" class="form-control" id="inputCor">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Quantidade</legend>
+            <input type="text" class="form-control" id="inputQuantidade">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Nº Aspirações</legend>
+            <input type="number" class="form-control" id="inputAspiracao" placeholder="número inteiro">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- COMEÇA A LINHA DE BUTTONS -->
+
+          <fieldset class="row mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Dispositivos</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos1" value="option1"
+                  checked>
+                <label class="form-check-label" for="dispositivos1">
+                  N/A
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos2" value="option2">
+                <label class="form-check-label" for="dispositivos2">
+                  Ausente
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos3" value="option3">
+                <label class="form-check-label" for="dispositivos3">
+                  TQT
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos4" value="option4">
+                <label class="form-check-label" for="dispositivos4">
+                  Cateter02
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos5" value="option5">
+                <label class="form-check-label" for="dispositivos5">
+                  Máscara Facial
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos6" value="option6">
+                <label class="form-check-label" for="dispositivos6">
+                  VM Não Invasiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos7" value="option7">
+                <label class="form-check-label" for="dispositivos7">
+                  VM Invasiva
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="dispositivos" id="dispositivos8" value="option8">
+                <label class="form-check-label" for="dispositivos8">
+                  Outros
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- ENCERRA A LINHA DE BUTTONS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Modelo</legend>
+            <input type="text" class="form-control" id="inputModelo">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">P. insp</legend>
+            <input type="text" class="form-control" id="inputPInsp">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Modo Vent.</legend>
+            <input type="text" class="form-control" id="inputModoVent">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">PEEP</legend>
+            <input type="text" class="form-control" id="inputPEEP">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">VC</legend>
+            <input type="text" class="form-control" id="inputVC">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">V. Min</legend>
+            <input type="text" class="form-control" id="inputVMin">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- COMEÇA A TEXTBOX -->
+
+          <div class="input-group  mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Observações</legend>
+
+            <textarea class="form-control" aria-label="With textarea" rows="3"></textarea>
+          </div>
+
+          <!-- FINALIZA A TEXTBOX -->
+
+        </div>
+
+      </mat-tab>
+
+      <!-- TERMINA A QUARTA ABA  -->
+
+      <mat-tab label="Avaliação Motora">
+
+        <!-- INICIA SELECT -->
+
+        <div class="aba-centro">
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Administração</legend>
+            <select class="form-select form-select" aria-label=".form-select example">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Normal</option>
+              <option value="3">Restrista</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalAdm">
+          </div>
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Dor ao movimento</legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idDorMovimento">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Sim</option>
+              <option value="3">Não</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalDorMovimento">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Edema</legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idEdema">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Sim</option>
+              <option value="3">Não</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalEdema">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Tônus
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idTonus">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Normal</option>
+              <option value="3">Diminuído</option>
+              <option value="4">Aumentado</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalTonus">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Trofismo Muscular
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idTrofismoMuscular">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Atrofia</option>
+              <option value="3">Hipotrofia</option>
+              <option value="4">Eutrofia</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalTrofismoMuscular">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Força Muscular
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idForcaMuscular">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">Normal</option>
+              <option value="3">Reduzida</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- Inicia a text box -->
+
+          <div class="input-group mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Local</legend>
+            <input type="text" class="form-control" id="inputLocalForcaMuscular">
+          </div>
+
+          <!-- ENCERRA a text box -->
+
+          <!-- INICIA SELECT -->
+
+          <div class="input-group mb-3 mt-5">
+            <legend class="col-form-label col-sm-2 pt-0">Marcha
+            </legend>
+            <select class="form-select form-select" aria-label=".form-select example" id="idMarcha">
+              <option selected>Selecione uma das opções abaixo</option>
+              <option value="1">Nenhuma das Alternativas</option>
+              <option value="2">com Aux. e com Órteses</option>
+              <option value="3">sem Aux. e com Órteses</option>
+              <option value="4">com Aux. e sem Órteses</option>
+              <option value="5">sem Aux. e sem Órteses</option>
+            </select>
+          </div>
+
+          <!-- ENCERRA SELECTS -->
+
+          <!-- COMEÇA A TEXTBOX -->
+
+          <div class="input-group  mb-3 mt-3">
+            <legend class="col-form-label col-sm-2 pt-0">Observações</legend>
+
+            <textarea class="form-control" aria-label="With textarea" rows="3"></textarea>
+          </div>
+
+          <!-- FINALIZA A TEXTBOX -->
+
+        </div>
+
+      </mat-tab>
+
+    </mat-tab-group>
+  </div>
+</div>

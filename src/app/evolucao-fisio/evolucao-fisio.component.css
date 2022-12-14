@@ -1,0 +1,21 @@
+.aba-centro {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+input {
+  max-width: 450px;
+}
+
+.p1 {
+  margin-top: 50px;
+}
+
+select {
+  max-width: 450px;
+}
+
+textarea {
+  max-width: 450px;
+}
