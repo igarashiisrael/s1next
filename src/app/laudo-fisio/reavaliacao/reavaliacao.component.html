@@ -1,1 +1,419 @@
-<p>reavaliacao works!</p>
+<div class="container">
+    <div class="row bg-light d-flex align-items-center">
+<p></p>
+<form action="">
+        <p class="p1"> Por favor, preencha o formulário de <strong>Reavaliação</strong> e clique no botão OK para criar um registro novo. Clique
+            em Cancelar para retornar à tela anterior </p>
+            <form>
+                <div class="row mb-3">
+                    <label for="DataAlta" class="col-sm-3 col-form-label">Data da Avaliação </label>
+                    <div class="col-sm-3">
+                        <input type="datetime-local" class="form-control" id="dataalta">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <label for="DiagClin" class="col-sm-12 col-form-label">Diagnóstico Clínico</label>
+                        <input type="text" class="form-control" id="diagclin">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <label for="QdrAtual" class="col-sm-10 col-form-label">Quadro Atual</label>
+                        <textarea class="form-control" id="qdratual" aria-label="With textarea" rows="3"></textarea>
+                    </div>
+                </div>
+            </form>
+            <form class="Exame">
+                <div class="row mb-3">
+                    <label for="Exame">Exame Físico</label>
+                    <div class="col-sm-6">
+                        <label for="Edemas" class="col-sm-8 col-form-label">Edemas</label>
+                        <input type="text" class="form-control" id="edemas">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Uceras" class="col-sm-8 col-form-label">Úceras</label>
+                        <input type="text" class="form-control" id="Uceras">
+                    </div>
+                </div>
+            </form>
+    
+            <!-- Options <row <cols> >-->
+            <form class="Avaliacao">
+                <div class="Avaliacao"><label for="Avaliacao">Avaliação</label>
+                    <div class="col-sm-12">
+    
+                        <!-- <row <cols> >-->
+    
+                        <div class="row mb-4">
+                            <br>
+                            <div class="col-sm-6"><label for="Neurologica"
+                                    class="col-sm-8 col-form-label">Neurológica</label>
+                                <form class="neurologia">
+                                    <div class="form-check">
+    
+                                        <input class="form-check-input" type="radio" name="NA" id="na" value="N/A" checked>
+                                        <label class="form-check-label" for="na">
+                                            N/A
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="CONSCIENTE" id="consciente"
+                                            value="Consciente">
+                                        <label class="form-check-label" for="conciente">
+                                            Consciente
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="COMATOSA" id="comatosa"
+                                            value="Comatosa">
+                                        <label class="form-check-label" for="comatosa">
+                                            Comatosa
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ORIENTADO" id="orientado"
+                                            value="Orientado">
+                                        <label class="form-check-label" for="orientado">
+                                            Orientado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="DESORIENTADO" id="desorientado"
+                                            value="Desorientado">
+                                        <label class="form-check-label" for="desorientado">
+                                            Desorientado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="AGITADO" id="agitado"
+                                            value="Agitado">
+                                        <label class="form-check-label" for="agitado">
+                                            Agitado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="SONOLENTO" id="sonolento"
+                                            value="Sonolento">
+                                        <label class="form-check-label" for="sonolento">
+                                            Sonolento
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+    
+                            <div class="col-sm-6"><label for="Motora" class="col-sm-8 col-form-label">Motora</label>
+                                <form class="motora">
+                                    <div class="form-check">
+    
+                                        <input class="form-check-input" type="radio" name="NA" id="na" value="Na" checked>
+                                        <label class="form-check-label" for="Na">
+                                            N/A
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="HEMIPLEGIA" id="hemiplegia"
+                                            value="Hemiplegia">
+                                        <label class="form-check-label" for="Hemiplegia">
+                                            Hemiplegia
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="HEMIPARESIA" id="hemiparesia"
+                                            value="hemiparesia">
+                                        <label class="form-check-label" for="hemiparesia">
+                                            Hemiparesia
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="PARAPARETICO" id="paraparetico"
+                                            value="Paraparetico">
+                                        <label class="form-check-label" for="paraparetico">
+                                            Paraparetico
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="SEMDEFICT" id="semdefict"
+                                            value="Semdefict">
+                                        <label class="form-check-label" for="semdefict">
+                                            Sem Défict
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="OUTROS" id="outros"
+                                            value="Outros">
+                                        <label class="form-check-label" for="outros">
+                                            Outros
+                                        </label>
+                                    </div>
+                                </form>
+                                <label for="Outros" class="col-sm-8 col-form-label">Outros</label>
+                                <input type="text" class="form-control" id="Outros" placeholder="Descreva">
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                    </div>
+    
+                </div>
+            </form>
+            <!-- FIM Options <row <cols> >-->
+    
+            <form class="Muscular">
+                <div class="row mb-3">
+                    <label for="Muscular">Força Muscular</label>
+    
+                    <div class="col-sm-6">
+                        <label for="MMII" class="col-sm-6 col-form-label">MMII</label>
+                        <input type="text" class="form-control" id="mmii" placeholder="Descreva">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="MMSS" class="col-sm-6 col-form-label">MMSS</label>
+                        <input type="text" class="form-control" id="mmss" placeholder="Descreva">
+                    </div>
+                </div>
+            </form>
+    
+            <form class="Tronco">
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <label for="Tronco" class="col-sm-6 col-form-label">Controle de Tronco</label>
+                        <input type="text" class="form-control" id="Tronco" placeholder="Descreva">
+                    </div>
+    
+                </div>
+            </form>
+            <form class="Posturais">
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <label for="Posturais" class="col-sm-6 col-form-label">Transferências Posturais</label>
+                        <input type="text" class="form-control" id="Tronco" placeholder="Descreva">
+                    </div>
+                </div>
+            </form>
+    
+            <!--Locomoção <row <cols> >-->
+            <form class="Locomocao">
+                <div class="row mb-4">
+    
+                    <div class="col-sm-6"><label for="LOCOMOCAO" class="col-sm-8 col-form-label">Locomoção</label>
+                        <form class="locomocao">
+                            <div class="form-check">
+    
+                                <input class="form-check-input" type="radio" name="NA" id="na" value="Na" checked>
+                                <label class="form-check-label" for="Na">
+                                    N/A
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="INDEPENDÊNCIA" id="independência"
+                                    value="Independência">
+                                <label class="form-check-label" for="independência">
+                                    Independência
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="naorealiza" id="naorealiza"
+                                    value="Naorealiza">
+                                <label class="form-check-label" for="naorealiza">
+                                    Não Reliza
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="AUXILIO" id="auxílio" value="Auxilio">
+                                <label class="form-check-label" for="auxílio">
+                                    Auxílio
+                                </label>
+                            </div>
+                        </form>
+                        <label for="Obs" class="col-sm-8 col-form-label">Observação</label>
+                        <input type="text" class="form-control" id="Obs" placeholder="Descreva">
+    
+                    </div>
+    
+                </div>
+    
+            </form>
+            <!-- Options <row <cols> >-->
+            <form class="Avaliacao">
+                <div class="Avaliacao"><label for="Avaliacao">Avaliação Respiratória</label>
+                    <div class="col-sm-12">
+    
+                        <!-- <row <cols> >-->
+    
+                        <div class="row mb-6">
+                            <br>
+                            <div class="col-sm-4"><label for="respirandoem" class="col-sm-4 col-form-label">Respirando
+                                    Em</label>
+                                <form class="RespirandoEm">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="NA" id="na" value="N/A" checked>
+                                        <label class="form-check-label" for="na">
+                                            N/A
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="CONSCIENTE" id="consciente"
+                                            value="Consciente">
+                                        <label class="form-check-label" for="conciente">
+                                            Ar Ambiente
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="COMATOSA" id="comatosa"
+                                            value="Comatosa">
+                                        <label class="form-check-label" for="comatosa">
+                                            TQR
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ORIENTADO" id="orientado"
+                                            value="Orientado">
+                                        <label class="form-check-label" for="orientado">
+                                            Cateter de O2
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-5"><label for="amplrespira" class="col-sm-5 col-form-label">Amplitude
+                                    Respiratória</label>
+                                <form class="Amplitude">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="NA" id="na" value="N/A" checked>
+                                        <label class="form-check-label" for="na">
+                                            N/A
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="EUPNEICO" id="eupneico"
+                                            value="Desorientado">
+                                        <label class="form-check-label" for="eupneico">
+                                            Eupneico
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="TAQUIPNEICO" id="taquipnieco"
+                                            value="taquipnieco">
+                                        <label class="form-check-label" for="taquipnieco">
+                                            Taquipnieco
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="BRADIPNEICO" id="bradipneico"
+                                            value="bradipneico">
+                                        <label class="form-check-label" for="bradipneico">
+                                            Bradipneico
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="OUTROS" id="outros"
+                                            value="Sonolento">
+                                        <label class="form-check-label" for="outros">
+                                            Outros
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-3"><label for="tosse" class="col-sm-4 col-form-label">Tosse</label>
+                                <form class="Tosse">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="NA" id="na" value="N/A" checked>
+                                        <label class="form-check-label" for="na">
+                                            N/A
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="EFICAZ" id="eficaz"
+                                            value="eficaz">
+                                        <label class="form-check-label" for="eficaz">
+                                            Eficaz
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="INEFICAZ" id="ineficaz"
+                                            value="ineficaz">
+                                        <label class="form-check-label" for="ineficaz">
+                                            Ineficaz
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="PRODUTIVA" id="produtiva"
+                                            value="produtiva">
+                                        <label class="form-check-label" for="produtiva">
+                                            Produtiva
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="IMPRODUTIVA" id="improdutiva"
+                                            value="improdutiva">
+                                        <label class="form-check-label" for="improdutiva">
+                                            Improdutiva
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+    
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </form>
+            <div></div>
+    
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="asculta" class="col-sm-10 col-form-label">Ausculta Pulmonar</label>
+                    <textarea class="form-control" id="asculta" aria-label="With textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="conduta" class="col-sm-10 col-form-label">Conduta</label>
+                    <textarea class="form-control" id="conduta" aria-label="With textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="objterapeuticos" class="col-sm-10 col-form-label">Objetivos Terapêuticos</label>
+                    <textarea class="form-control" id="objterapeuticos" aria-label="With textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="planterapeutico" class="col-sm-10 col-form-label">Plano Terapêutico</label>
+                    <textarea class="form-control" id="planterapeutico" aria-label="With textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="prevalta" class="col-sm-10 col-form-label">Previsão De Alta</label>
+                    <textarea class="form-control" id="prevalta" aria-label="With textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <label for="obsocorrencia" class="col-sm-10 col-form-label">Observaçães / Ocorrência</label>
+                    <textarea class="form-control" id="obsocorrencia" aria-label="With textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <form>
+                <label for="profissional" class="col-sm-10 col-form-label">Profissional</label>
+    
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <label for="cod" class="col-sm-10 col-form-label">COD Profissional</label>
+                        <input type="text" class="form-control" id="cod" placeholder="Digite o Cod">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="nomeprof" class="col-sm-10 col-form-label">Nome Profissional</label>
+                        <input type="text" class="form-control" id="nomeprof" placeholder="Selecione">
+                    </div>
+                </div>
+            </form>
+        </form>
+        <p></p><p></p>
+        </div>
+    </div>

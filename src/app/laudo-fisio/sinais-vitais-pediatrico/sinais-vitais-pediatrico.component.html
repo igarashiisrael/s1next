@@ -1,119 +1,116 @@
 <div class="container">
     <div class="row bg-light d-flex align-items-center">
+        <p></p>
 
-                <p class="p1"> Por favor, preencha o formulário Sinais Vitais Pediátrico e clique no botão OK para criar um registro novo
+                <p class="p1"> Por favor, preencha o formulário <strong>Sinais Vitais Pediátrico</strong> e clique no botão OK para criar um registro novo
                     laudos fisioterapia. Clique em Cancelar para retornar à tela anterior </p>
-                <form>
+                pu<form action="/action_page.php" method="get" name="formsvpediatrico"></form>
                     <div class="row mb-3">
-                        <label for="Data_sv1" class="col-sm-1 col-form-label">Data</label>
+                        <label for="Data_sv" class="col-sm-1 col-form-label">Data</label>
                         <div class="col-sm-3">
-                            <input type="datetime-local" class="form-control" id="date">
+                            <input type="datetime-local" class="form-control" id="datasv_ped">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <label for="Idade" class="col-sm-1 col-form-label">Idade</label>
-                            <input type="number" class="form-control" id="idade">
+                            <input type="number" class="form-control" id="idade_ped">
                         </div>
                         <div class="col-sm-3">
                             <label for="Peso" class="col-sm-1 col-form-label">Peso</label>
-                            <input type="number" class="form-control" id="peso">
+                            <input type="number" class="form-control" id="peso_ped">
                         </div>
                         <div class="col-sm-3">
                             <label for="Altura" class="col-sm-1 col-form-label">Altura</label>
-                            <input type="number" class="form-control" id="altura">
+                            <input type="number" class="form-control" id="altura_ped">
                         </div>
                         <div class="col-sm-3">
                             <label for="Temperatura" class="col-sm-1 col-form-label"> Temperatura </label>
-                            <input type="number" class="form-control" id="temperatura">
+                            <input type="number" class="form-control" id="temperatura_ped">
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-sm-6">
                             <label for="Imc" class="col-sm-8 col-form-label">IMC</label>
-                            <input type="text" class="form-control" id="imc">
+                            <input type="text" class="form-control" id="imc_ped">
                         </div>
                         <div class="col-sm-6">
                             <label for="Indicemassa" class="col-sm-8 col-form-label">Índice de Massa Corpórea-IMC</label>
-                            <input type="number" class="form-control" id="indicemassa">
+                            <input type="number" class="form-control" id="indicemassa_ped">
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-sm-6">
                             <label for="FreqCardi" class="col-sm-8 col-form-label">Frequência Cardíaca</label>
-                            <input type="number"  class="form-control" id="freqResp">
+                            <input type="number"  class="form-control" id="freqcari_ped">
                         </div>
                             <div class="col-sm-6">
 
                             <label for="FreqResp" class="col-sm-8 col-form-label">Frequência Respiratória</label>
-                                <input type="number" class="form-control" id="freqResp">
+                                <input type="number" class="form-control" id="freqresp_ped">
                             </div>
                         </div>
                     <div class="row mb-6">
                         <div class="col-sm-6">
                             <label for="Sistolica" class="col-sm-8 col-form-label">Pressão Sistólica</label>
-                            <input type="number" class="form-control" id="sistolica">
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="Sistolica" class="col-sm-8 col-form-label">Pressão Sistólica</label>
-                            <input type="number" class="form-control" id="sistolica">
+                            <input type="number" class="form-control" id="sistolica_ped">
                         </div>
                     </div>
                     <div class="row mb-6">
                         <div class="col-sm-6">
                             <label for="Saturacao" class="col-sm-8 col-form-label">Saturação de Oxigênio</label>
-                            <input type="number" class="form-control" id="satueacao">
+                            <input type="number" class="form-control" id="saturacao_ped">
                         </div>
                         <div class="col-sm-6">
                             <label for="Glicemia" class="col-sm-8 col-form-label">Glicemia Capilar</label>
-                            <input type="number" class="form-control" id="glicemia">
+                            <input type="number" class="form-control" id="glicemia_ped">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-12">
                            <label for="Glicemia" class="col-sm-8 col-form-label">Escala de Dor</label>
-                            <input type="text" class="form-control" id="dor">
+                            <input type="text" class="form-control" id="dor_ped">
                         </div>
                     </div>
                     <div class="row mb-6">
                         <div class="col-sm-12">
                             <label for="Local" class="col-sm-10 col-form-label">Local</label>
-                            <textarea class="form-control" id="local" aria-label="With textarea" rows="3"></textarea>
+                            <textarea class="form-control" id="local_ped" aria-label="With textarea" rows="3"></textarea>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-12">
                            <label for="Resultado" class="col-sm-8 col-form-label">Resultado/Total (NEWS)</label>
-                            <input type="text" class="form-control" id="resultado">
+                            <input type="text" class="form-control" id="resultado_ped">
                         </div>
                     </div>
                     <div class="row mb-6">
                         <div class="col-sm-12">
                             <label for="Queixa" class="col-sm-10 col-form-label">Queixa Principal</label>
-                            <textarea class="form-control" id ="queixa" aria-label="With textarea" rows="3"></textarea>
+                            <textarea class="form-control" id ="queixa_ped" aria-label="With textarea" rows="3"></textarea>
                         </div>
                     </div>
                     <div class="row mb-6">
                         <div class="col-sm-12">
                             <label for="Conduta" class="col-sm-10 col-form-label">Conduta Inicial</label>
-                            <textarea class="form-control" id ="conduta" aria-label="With textarea" rows="3"></textarea>
+                            <textarea class="form-control" id ="conduta_ped" aria-label="With textarea" rows="3"></textarea>
                         </div>
                     </div>
                     <div class="row mb-6">
                         <div class="col-sm-12">
                             <label for="Conciencia" class="col-sm-10 col-form-label">Nível de consciência</label>
-                            <textarea class="form-control" id ="conciencia" aria-label="With textarea" rows="3"></textarea>
+                            <textarea class="form-control" id ="conciencia_ped" aria-label="With textarea" rows="3"></textarea>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-12">
                            <label for="Suplementaro2" class="col-sm-8 col-form-label">Uso de O2 Suplementar</label>
-                            <input type="text" class="form-control" id="suplementaro2">
+                            <input type="text" class="form-control" id="suplementaro2_ped">
                         </div>
                     </div>
                 </form>
                 </div>
-
+                <p></p><p></p>
     </div>
