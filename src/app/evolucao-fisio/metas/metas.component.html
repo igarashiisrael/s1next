@@ -1,1 +1,53 @@
-<p>metas works!</p>
+<div class="container margin-inferior">
+  <div class="row bg-light d-flex align-items-center">
+    <form action="">
+      <p class="p1"> Por favor, preencha o formulário de <strong>Metas</strong> e clique no botão OK para
+        criar um
+        registro novo.
+        Clique em Cancelar para retornar à tela anterior </p>
+
+      <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+      <div class="col-sm-6 alinhamento mb-2">
+
+        <div class="input-group mb-3 mt-3 col-sm-4">
+
+          <legend class="col-form-label col-sm-4 pt-0"> Controle de Tronco </legend>
+          <mat-slide-toggle (change)="ControleTronco($event)" id="ControleTroncoToggle"></mat-slide-toggle>
+        </div>
+
+        <div *ngIf="isDisplay" class="mb-3 mt-3 col-sm-6 alinhamento">
+          <label for="DtPrazoControleTronco" class="col-sm-6 col-form-label">Data do Prazo</label>
+          <div class="col-sm-6">
+            <input type="date" class="form-control" id="datePrazoControleTronco">
+          </div>
+        </div>
+      </div>
+      <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+      <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+      <div class="col-sm-6 mb-2">
+
+        <div class="input-group mb-3 mt-3 col-sm-4">
+
+          <legend class="col-form-label col-sm-4 pt-0"> Estabilidade Articular </legend>
+          <mat-slide-toggle (change)="EstabilidadeArticular($event)"
+            id="EstabilidadeArticularToogle"></mat-slide-toggle>
+        </div>
+
+        <div *ngIf="isDisplay" class="mb-3 mt-3 col-sm-6 alinhamento">
+          <label for="DtPrazoEstabilidadeArticular" class="col-sm-6 col-form-label">Data do Prazo</label>
+          <div class="col-sm-6">
+            <input type="date" class="form-control" id="datePrazoEstabilidadeArticular">
+          </div>
+        </div>
+      </div>
+      <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+
+
+
+
+
+    </form>
+  </div>
+</div>
