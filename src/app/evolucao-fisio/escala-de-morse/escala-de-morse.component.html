@@ -1,0 +1,611 @@
+<div class="container margin-inferior">
+  <div class="row bg-light d-flex align-items-center">
+    <form action="">
+      <p class="p1"> Por favor, preencha o formulário de <strong>Escala de Morse</strong> e clique no botão OK para
+        criar um
+        registro novo.
+        Clique em Cancelar para retornar à tela anterior </p>
+
+      <h5 class="mb-3 mt-3">Avaliação do Risco de Queda</h5>
+
+      <!-- INICIA SELECT -->
+
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Historico de Quedas</legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idHistoricoQuedasEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1">Nenhuma das Alternativas</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Diagnóstico Secundário</legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idDiagnosticoSecundarioEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1">Nenhuma das Alternativas</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+      </div>
+
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Auxilio na Deambulação</legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idAuxilioDeambulacaoEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1">Nenhuma das Alternativas</option>
+            <option value="2">Nenhum / Acamado / Auxiliado por Profissional da Saúde</option>
+            <option value="3">Muleta / Bengala / Andador</option>
+            <option value="4">Mobiliário / Parede</option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Terapia Endovenosa/ Dispositivo Endovenoso Salinizado ou
+            Heparinizado</legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idTerapiaDispositivoEndovenosoEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1">Nenhuma das Alternativas</option>
+            <option value="2">Sim</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Marcha</legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idMarchaQuedaEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1">Nenhuma das Alternativas</option>
+            <option value="2">Normal / Sem Deambulação / Acamado / Cadeira de Rodas</option>
+            <option value="3">Fraca</option>
+            <option value="4">Comprometida / Cambaleante</option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Estado Mental</legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idEstadoMentalEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1">Nenhuma das Alternativas</option>
+            <option value="2">Orientado / Capaz quanto a sua capacidade / Limitação</option>
+            <option value="3">Superestima capacidade / Esquece limitações</option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+      </div>
+
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Risco de Queda </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idRiscoQuedaEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1">Risco Alto > 45 </option>
+            <option value="2">Risco Moderado 44 a 25 </option>
+            <option value="3">Risco Baixo < 24</option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+      </div>
+
+      <h5 class="mb-3 mt-3">MIF</h5>
+
+      <!-- Inicia a text box -->
+
+      <div class="input-group mb-3 mt-3">
+        <legend class="col-form-label">Medida de Independência Funcional</legend>
+        <input type="text" class="form-control" id="inputMIF">
+      </div>
+
+      <!-- ENCERRA a text box -->
+
+      <h5 class="mb-3 mt-3">Auto-Cuidado</h5>
+
+
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <div class="mt-3 mb-3">
+          <legend for="AutoCuidado" class="col-sm-6 col-form-label">Data</legend>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" id="dateAutoCuidado">
+          </div>
+        </div>
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Alimentação </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idAlimentacaoEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+      <div class="col-sm-12 alinhamento mb-2">
+
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Higiene Pessoal (Apresentação e Aparência) </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idHigienePessoalEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Banho (Lavar o Corpo) </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idBanhoEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Vestir (Metade Superior do Corpo) </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idVestirSuperiorEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Vestir (Metade Inferior do Corpo) </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idVestirInferiorEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label">Utilização do Vaso Sanitário </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idUtilizacaoVasoEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+
+      <h5 class="mb-3 mt-3">Controle dos Esfíncteres</h5>
+
+      <div class="col-sm-12 alinhamento mb-2">
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Controle da Urina (Frequência de Incontinência) </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idControleUrinaEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Controle das Fezes </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idControleFezesEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+
+      <h5 class="mb-3 mt-3">Mobilidade</h5>
+
+      <div class="col-sm-12 alinhamento mb-2">
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Transferências: leito, cadeira, cadeira de rodas </legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idTransfLeitoCadeirasEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Transferências: vaso sanitario</legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idTransfVasoSanitarioEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Transferências: banheira e chuveiro</legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idTransfBanheiraChuveiroEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+
+      <h5 class="mb-3 mt-3">Locomoção</h5>
+
+      <div class="col-sm-12 alinhamento mb-2">
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Marcha </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idMarchaLocomocaoEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Cadeira de Rodas </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idCadeiraDeRodasEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+
+      <h5 class="mb-3 mt-3">Comunicação</h5>
+
+      <div class="col-sm-12 alinhamento mb-2">
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Compreensão Auditiva </legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idCompreensaoAuditivaEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Compreensão Visual</legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idCompreensaoVisualEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Expressão Verbal </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idExpressaoVerbalEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Expressão Não Verbal </legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idExpressaoNaoVerbalEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+
+      <h5 class="mb-3 mt-3">Conhecimento Social</h5>
+
+      <div class="col-sm-12 alinhamento mb-2">
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Interação Social </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idInteracaoSocialEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Resolução de Problemas </legend>
+          <select class="form-select form-select" aria-label=".form-select example"
+            id="idResolucaoProblemasEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+      <div class="col-sm-12 alinhamento mb-2">
+
+        <!-- INICIA SELECT -->
+        <div class="input-group mb-3 mt-3">
+
+
+          <legend class="col-form-label"> Memória </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idMemoriaEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> 1 - Assistência Total (Sujeito > 10%) </option>
+            <option value="2"> 2 - Assistência Máxima (Sujeito > 25%) </option>
+            <option value="3"> 3 - Assistência Moderada (Sujeito > 50%) </option>
+            <option value="4"> 4 - Assistência Mínima (Sujeito > 75%) </option>
+            <option value="5"> 5 - Supervisão </option>
+            <option value="6"> 6 - Independência Modificada (Ajuda Técnica) </option>
+            <option value="7"> 7 - Independência Completa (Com Segurança e Tempo Normal) </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+        <!-- INICIA SELECT -->
+
+        <div class="input-group mb-3 mt-3">
+
+          <legend class="col-form-label"> Total </legend>
+          <select class="form-select form-select" aria-label=".form-select example" id="idTotalEscalaMorse">
+            <option selected>Selecione uma das opções abaixo</option>
+            <option value="1"> Sem pontuação </option>
+            <option value="2"> 18 pontos: Dependência Completa (Assistência Total) </option>
+            <option value="3"> 19 a 60 pontos: Dependência Modificada (Assistência de até 50% das Tarefas)
+            </option>
+            <option value="4"> 61 a 103 pontos: Dependência Modificada (Assistência de até 25% das Tarefas)
+            </option>
+            <option value="5"> 104 a 126 pontos: Independência Completa </option>
+          </select>
+        </div>
+
+        <!-- ENCERRA SELECTS -->
+
+      </div>
+
+    </form>
+
+  </div>

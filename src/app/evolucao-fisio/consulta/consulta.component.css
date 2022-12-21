@@ -1,0 +1,30 @@
+.alinhamento {
+  display: flex;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.aba-centro {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+input {
+  max-width: 450px;
+}
+
+.p1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+select {
+  max-width: 450px;
+}
+
+textarea {
+  max-width: 450px;
+}

@@ -17,6 +17,14 @@ import { AvaliacaoComponent } from './laudo-fisio/avaliacao/avaliacao.component'
 import { ReavaliacaoComponent } from './laudo-fisio/reavaliacao/reavaliacao.component';
 import { LaudoComponent } from './laudo-fisio/laudo/laudo.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { ConsultaComponent } from './evolucao-fisio/consulta/consulta.component';
+import { NeurologiaComponent } from './evolucao-fisio/neurologia/neurologia.component';
+import { RespiratorioComponent } from './evolucao-fisio/respiratorio/respiratorio.component';
+import { SecrecaoComponent } from './evolucao-fisio/secrecao/secrecao.component';
+import { AvaliacaoMotoraComponent } from './evolucao-fisio/avaliacao-motora/avaliacao-motora.component';
+import { EquilibrioComponent } from './evolucao-fisio/equilibrio/equilibrio.component';
+import { EscalaDeMorseComponent } from './evolucao-fisio/escala-de-morse/escala-de-morse.component';
+import { MetasComponent } from './evolucao-fisio/metas/metas.component';
 
 
 @NgModule({
@@ -31,7 +39,15 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
     AvaliacaoComponent,
     ReavaliacaoComponent,
     LaudoComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    ConsultaComponent,
+    NeurologiaComponent,
+    RespiratorioComponent,
+    SecrecaoComponent,
+    AvaliacaoMotoraComponent,
+    EquilibrioComponent,
+    EscalaDeMorseComponent,
+    MetasComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,51 @@
+<div class="container margin-inferior">
+  <div class="row bg-light d-flex align-items-center">
+
+    <p class="p1"> Por favor, preencha o formulário de <strong>Consulta</strong> e clique no botão OK para criar um
+      registro novo.
+      Clique em Cancelar para retornar à tela anterior </p>
+    <form>
+
+      <div class="row mb-3">
+        <legend for="inicioConsulta" class="col-sm-2 col-form-label">Início da consulta</legend>
+        <div class="col-sm-10">
+          <input type="datetime-local" class="form-control" id="dateInicioConsulta">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <legend for="terminoConsulta" class="col-sm-2 col-form-label">Término da consulta</legend>
+        <div class="col-sm-10">
+          <input type="datetime-local" class="form-control" id="dateTerminoConsulta">
+        </div>
+      </div>
+
+
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Vista</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipoConsulta" id="tipoConsulta1" value="option1" checked>
+            <label class="form-check-label" for="tipoConsulta1">
+              Agendada
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipoConsulta" id="tipoConsulta2" value="option2">
+            <label class="form-check-label" for="tipoConsulta2">
+              Intercorrência
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipoConsulta" id="tipoConsulta3" value="option3">
+            <label class="form-check-label" for="tipoConsulta3">
+              Admissão
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+
+  </div>
