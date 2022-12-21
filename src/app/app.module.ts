@@ -17,6 +17,7 @@ import { AvaliacaoComponent } from './laudo-fisio/avaliacao/avaliacao.component'
 import { ReavaliacaoComponent } from './laudo-fisio/reavaliacao/reavaliacao.component';
 import { LaudoComponent } from './laudo-fisio/laudo/laudo.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identificacao.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
     AvaliacaoComponent,
     ReavaliacaoComponent,
     LaudoComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    FichaIdentificacaoComponent
   ],
   imports: [
     BrowserModule,
