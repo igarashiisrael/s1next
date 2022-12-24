@@ -1,53 +1,398 @@
 <div class="container margin-inferior">
+
   <div class="row bg-light d-flex align-items-center">
-    <form action="">
-      <p class="p1"> Por favor, preencha o formulário de <strong>Metas</strong> e clique no botão OK para
-        criar um
-        registro novo.
-        Clique em Cancelar para retornar à tela anterior </p>
+    <p class="p1"> Por favor, preencha o formulário de <strong>Metas</strong> e clique no botão OK para
+      criar um
+      registro novo.
+      Clique em Cancelar para retornar à tela anterior </p>
 
-      <!-- COMEÇA SLIDE-TOOGLE / DATA -->
-      <div class="col-sm-6 alinhamento mb-2">
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
 
-        <div class="input-group mb-3 mt-3 col-sm-4">
+      <div class="input-group mb-3 mt-3 col-sm-4 ">
 
-          <legend class="col-form-label col-sm-4 pt-0"> Controle de Tronco </legend>
-          <mat-slide-toggle (change)="ControleTronco($event)" id="ControleTroncoToggle"></mat-slide-toggle>
-        </div>
+        <legend class="col-form-label col-sm-4 pt-0 "> Controle de Tronco </legend>
+        <mat-slide-toggle [(ngModel)]="ControleTroncoToggle" id="ControleTroncoTg"></mat-slide-toggle>
+      </div>
 
-        <div *ngIf="isDisplay" class="mb-3 mt-3 col-sm-6 alinhamento">
-          <label for="DtPrazoControleTronco" class="col-sm-6 col-form-label">Data do Prazo</label>
-          <div class="col-sm-6">
-            <input type="date" class="form-control" id="datePrazoControleTronco">
-          </div>
+      <div *ngIf="ControleTroncoToggle" class="mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoControleTronco" class="col-sm-6 col-form-label">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoControleTronco">
         </div>
       </div>
-      <!-- TERMINA SLIDE-TOOGLE / DATA -->
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
 
-      <!-- COMEÇA SLIDE-TOOGLE / DATA -->
-      <div class="col-sm-6 mb-2">
 
-        <div class="input-group mb-3 mt-3 col-sm-4">
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
 
-          <legend class="col-form-label col-sm-4 pt-0"> Estabilidade Articular </legend>
-          <mat-slide-toggle (change)="EstabilidadeArticular($event)"
-            id="EstabilidadeArticularToogle"></mat-slide-toggle>
-        </div>
+      <div class="input-group mb-3 mt-3 col-sm-4">
 
-        <div *ngIf="isDisplay" class="mb-3 mt-3 col-sm-6 alinhamento">
-          <label for="DtPrazoEstabilidadeArticular" class="col-sm-6 col-form-label">Data do Prazo</label>
-          <div class="col-sm-6">
-            <input type="date" class="form-control" id="datePrazoEstabilidadeArticular">
-          </div>
+        <legend class="col-form-label col-sm-4 pt-0"> Estabilidade Articular </legend>
+        <mat-slide-toggle [(ngModel)]="EstabilidadeArticularToogle" id="EstabilidadeArticularTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="EstabilidadeArticularToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoEstabilidadeArticular" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoEstabilidadeArticular">
         </div>
       </div>
-      <!-- TERMINA SLIDE-TOOGLE / DATA -->
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Maior Independência e Autonomia </legend>
+        <mat-slide-toggle [(ngModel)]="MaiorIndependenciaAutonomiaToogle"
+          id="MaiorIndependenciaAutonomiaTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="MaiorIndependenciaAutonomiaToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoMaiorIndependenciaAutonomia" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoMaiorIndependenciaAutonomia">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Manter vias aéreas pérveas </legend>
+        <mat-slide-toggle [(ngModel)]="ManterViasAereasPerveasToogle" id="ManterViasAereasPerveasTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="ManterViasAereasPerveasToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoManterViasAereasPerveas" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoManterViasAereasPerveas">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Manutenção / Ganho De Adm </legend>
+        <mat-slide-toggle [(ngModel)]="ManutencaoGanhoDeAdmToogle" id="ManutencaoGanhoDeAdmTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="ManutencaoGanhoDeAdmToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoManutencaoGanhoDeAdm" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoManutencaoGanhoDeAdm">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Manutenção / Ganho Força Muscular </legend>
+        <mat-slide-toggle [(ngModel)]="ManutencaoGanhoForcaMuscularToogle"
+          id="ManutencaoGanhoForcaMuscularTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="ManutencaoGanhoForcaMuscularToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoManutencaoGanhoForcaMuscular" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoManutencaoGanhoForcaMuscular">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Manutenção / Melhora Função Pulmonar </legend>
+        <mat-slide-toggle [(ngModel)]="ManutencaoMelhoraFuncaoPulmonarToogle"
+          id="ManutencaoMelhoraFuncaoPulmonarTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="ManutencaoMelhoraFuncaoPulmonarToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoManutencaoMelhoraFuncaoPulmonar" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoManutencaoMelhoraFuncaoPulmonar">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Manutenção / Melhora do Tônus Musc. </legend>
+        <mat-slide-toggle [(ngModel)]="ManutencaoMelhoraTonusMuscToogle"
+          id="ManutencaoMelhoraTonusMuscTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="ManutencaoMelhoraTonusMuscToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoManutencaoMelhoraTonusMusc" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoManutencaoMelhoraTonusMusc">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Melhor Coordenação Motora </legend>
+        <mat-slide-toggle [(ngModel)]="MelhorCoordenacaoMotoraToogle" id="MelhorCoordenacaoMotoraTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="MelhorCoordenacaoMotoraToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoMelhorCoordenacaoMotora" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoMelhorCoordenacaoMotora">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Melhor Flexibilidade </legend>
+        <mat-slide-toggle [(ngModel)]="MelhorFlexibilidadeToogle" id="MelhorFlexibilidadeTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="MelhorFlexibilidadeToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoMelhorFlexibilidade" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoMelhorFlexibilidade">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Melhor Qualidade De Vida </legend>
+        <mat-slide-toggle [(ngModel)]="MelhorQualidadeDeVidaToogle" id="MelhorQualidadeDeVidaTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="MelhorQualidadeDeVidaToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoMelhorQualidadeDeVida" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoMelhorQualidadeDeVida">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Melhor Equilíbrio </legend>
+        <mat-slide-toggle [(ngModel)]="MelhorEquilibrioToogle" id="MelhorEquilibrioTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="MelhorEquilibrioToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoMelhorEquilibrio" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoMelhorEquilibrio">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Melhor Padrão da Marcha </legend>
+        <mat-slide-toggle [(ngModel)]="MelhorPadraoMarchaToogle" id="MelhorPadraoMarchaTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="MelhorPadraoMarchaToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoMelhorPadraoMarcha" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoMelhorPadraoMarcha">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Minimizar os Efeitos da Imobilidade </legend>
+        <mat-slide-toggle [(ngModel)]="MinimizarEfeitosImobilidadeToogle"
+          id="MinimizarEfeitosImobilidadeTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="MinimizarEfeitosImobilidadeToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoMinimizarEfeitosImobilidade" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoMinimizarEfeitosImobilidade">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Redução da Rigidez Articular </legend>
+        <mat-slide-toggle [(ngModel)]="ReducaoRigidezArticularToogle" id="ReducaoRigidezArticularTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="ReducaoRigidezArticularToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoReducaoRigidezArticular" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoReducaoRigidezArticular">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Prev. de Quedas e suas Complicações </legend>
+        <mat-slide-toggle [(ngModel)]="PrevQuedasComplicacoesToogle" id="PrevQuedasComplicacoesTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="PrevQuedasComplicacoesToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoPrevQuedasComplicacoes" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoPrevQuedasComplicacoes">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Prev. Contraturas e Deformidades </legend>
+        <mat-slide-toggle [(ngModel)]="PrevContraturasDeformidadesToogle"
+          id="PrevContraturasDeformidadesTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="PrevContraturasDeformidadesToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoPrevContraturasDeformidades" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoPrevContraturasDeformidades">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Prev. Doenças Pulmonares </legend>
+        <mat-slide-toggle [(ngModel)]="PrevDoencasPulmonaresToogle" id="PrevDoencasPulmonaresTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="PrevDoencasPulmonaresToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoPrevDoencasPulmonares" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoPrevDoencasPulmonares">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Prev. o Surgimento de Úlceras De Pressão </legend>
+        <mat-slide-toggle [(ngModel)]="PrevSurgimentoUlcerasDePressaoToogle"
+          id="PrevSurgimentoUlcerasDePressaoTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="PrevSurgimentoUlcerasDePressaoToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoPrevSurgimentoUlcerasDePressao" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoPrevSurgimentoUlcerasDePressao">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Prev. Tvp </legend>
+        <mat-slide-toggle [(ngModel)]="PrevTvpToogle" id="PrevTvpTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="PrevTvpToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoPrevTvp" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoPrevTvp">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
+
+    <!-- COMEÇA SLIDE-TOOGLE / DATA -->
+    <div class="col-sm-6 mb-2 alinhamento">
+
+      <div class="input-group mb-3 mt-3 col-sm-4">
+
+        <legend class="col-form-label col-sm-4 pt-0"> Redução do Quadro Álgico </legend>
+        <mat-slide-toggle [(ngModel)]="ReducaoQuadroAlgicoToogle" id="ReducaoQuadroAlgicoTg"></mat-slide-toggle>
+      </div>
+
+      <div *ngIf="ReducaoQuadroAlgicoToogle" class=" mb-3 mt-3 col-sm-6 alinhamento">
+        <label for="DtPrazoReducaoQuadroAlgico" class="col-sm-6 col-form-label ">Data do Prazo</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" id="datePrazoReducaoQuadroAlgico">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA SLIDE-TOOGLE / DATA -->
 
 
 
-
-
-
-    </form>
   </div>
 </div>

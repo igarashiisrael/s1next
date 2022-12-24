@@ -1,5 +1,6 @@
 .alinhamento {
-  display: inline-flex
+  display: flex;
+  margin: 10px;
 }
 
 /* 

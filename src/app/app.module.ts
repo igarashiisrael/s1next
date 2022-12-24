@@ -8,6 +8,8 @@ import { EvolucaoFisioComponent } from './evolucao-fisio/evolucao-fisio.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
+
 
 import { LaudoFisioComponent } from './laudo-fisio/laudo-fisio.component';
 import { SinaisVitaisComponent } from './laudo-fisio/sinais-vitais/sinais-vitais.component';
@@ -55,6 +57,7 @@ import { MetasComponent } from './evolucao-fisio/metas/metas.component';
     BrowserAnimationsModule,
     MatTabsModule,
     MatSlideToggleModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
