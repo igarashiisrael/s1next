@@ -27,6 +27,7 @@ import { AvaliacaoMotoraComponent } from './evolucao-fisio/avaliacao-motora/aval
 import { EquilibrioComponent } from './evolucao-fisio/equilibrio/equilibrio.component';
 import { EscalaDeMorseComponent } from './evolucao-fisio/escala-de-morse/escala-de-morse.component';
 import { MetasComponent } from './evolucao-fisio/metas/metas.component';
+import { OrientacoesComponent } from './evolucao-fisio/orientacoes/orientacoes.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { MetasComponent } from './evolucao-fisio/metas/metas.component';
     AvaliacaoMotoraComponent,
     EquilibrioComponent,
     EscalaDeMorseComponent,
-    MetasComponent
+    MetasComponent,
+    OrientacoesComponent
   ],
   imports: [
     BrowserModule,
