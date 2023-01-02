@@ -30,6 +30,7 @@ import { MetasComponent } from './evolucao-fisio/metas/metas.component';
 import { OrientacoesComponent } from './evolucao-fisio/orientacoes/orientacoes.component';
 import { CondutasComponent } from './evolucao-fisio/condutas/condutas.component';
 import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identificacao.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identif
     MetasComponent,
     OrientacoesComponent,
     CondutasComponent,
-    FichaIdentificacaoComponent
+    FichaIdentificacaoComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
