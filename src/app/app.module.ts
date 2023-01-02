@@ -29,6 +29,7 @@ import { EscalaDeMorseComponent } from './evolucao-fisio/escala-de-morse/escala-
 import { MetasComponent } from './evolucao-fisio/metas/metas.component';
 import { OrientacoesComponent } from './evolucao-fisio/orientacoes/orientacoes.component';
 import { CondutasComponent } from './evolucao-fisio/condutas/condutas.component';
+import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identificacao.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { CondutasComponent } from './evolucao-fisio/condutas/condutas.component'
     EscalaDeMorseComponent,
     MetasComponent,
     OrientacoesComponent,
-    CondutasComponent
+    CondutasComponent,
+    FichaIdentificacaoComponent
   ],
   imports: [
     BrowserModule,
