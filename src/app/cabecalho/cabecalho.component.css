@@ -1,7 +1,12 @@
-
 div {
-    border-radius: 5px;
-  }
-  label,input{
-    padding: 0%;
-  }
+  border-radius: 5px;
+}
+
+label,
+input {
+  padding: 0%;
+}
+
+.fundo-cor {
+  background-color: #59c4bc;
+}
