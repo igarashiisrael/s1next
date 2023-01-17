@@ -1,0 +1,51 @@
+.page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.2cm rgba(0, 0, 0, 0.5);
+}
+
+.page[size="A4"] {
+    width: 20cm;
+    height: 28.7cm;
+}
+
+.page[size="A4"][layout="portrait"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1px;
+    font-size: 8pt;
+    text-align: left;
+
+
+}
+
+table tr th {
+    background: #D0CECE;
+    /* cor antes da impressão */
+}
+
+@media print {
+    table tr th {
+        background: #D0CECE;
+        box-shadow: 0 0 0 1000px #D0CECE;
+        /* cor para impressão */
+
+
+
+
+        @page {
+            margin: .79in .51in .79in .51in;
+            mso-header-margin: .31in;
+            mso-footer-margin: .31in;
+        }
+    }
+}

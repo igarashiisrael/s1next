@@ -5,6 +5,7 @@ import { LaudoFisioComponent } from './laudo-fisio/laudo-fisio.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identificacao.component';
 import { FichaIdentImpressaoComponent } from './ficha-ident-impressao/ficha-ident-impressao.component';
+import { LaudoFisioImpressaoComponent } from './laudo-fisio-impressao/laudo-fisio-impressao.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,10 @@ const routes: Routes = [
   { path: 'laudo-fisio', component: LaudoFisioComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'ficha-identificacao',component:FichaIdentificacaoComponent},
-  { path: 'ficha-ident-impressao',component:FichaIdentImpressaoComponent}
+  { path: 'ficha-ident-impressao',component:FichaIdentImpressaoComponent},
+  { path: 'laudo-fisio-impressao',component:LaudoFisioImpressaoComponent}
+
+
 
   
 ];

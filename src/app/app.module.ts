@@ -35,6 +35,7 @@ import { FiliacaoComponent } from './ficha-identificacao/filiacao/filiacao.compo
 import { EnderecoComponent } from './ficha-identificacao/endereco/endereco.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FichaIdentImpressaoComponent } from './ficha-ident-impressao/ficha-ident-impressao.component';
+import { LaudoFisioImpressaoComponent } from './laudo-fisio-impressao/laudo-fisio-impressao.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { FichaIdentImpressaoComponent } from './ficha-ident-impressao/ficha-iden
     ContatoComponent,
     FiliacaoComponent,
     EnderecoComponent,
-    FichaIdentImpressaoComponent
+    FichaIdentImpressaoComponent,
+    LaudoFisioImpressaoComponent
   ],
   imports: [
     BrowserModule,
