@@ -26,8 +26,13 @@ import { EscalaDeMorseComponent } from './evolucao-fisio/escala-de-morse/escala-
 import { MetasComponent } from './evolucao-fisio/metas/metas.component';
 import { OrientacoesComponent } from './evolucao-fisio/orientacoes/orientacoes.component';
 import { CondutasComponent } from './evolucao-fisio/condutas/condutas.component';
-import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identificacao.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identificacao.component';
+import { DadospacienteComponent } from './ficha-identificacao/dadospaciente/dadospaciente.component';
+import { IdentificacaoComponent } from './ficha-identificacao/identificacao/identificacao.component';
+import { ContatoComponent } from './ficha-identificacao/contato/contato.component';
+import { FiliacaoComponent } from './ficha-identificacao/filiacao/filiacao.component';
+import { EnderecoComponent } from './ficha-identificacao/endereco/endereco.component';
 
 
 @NgModule({
@@ -53,8 +58,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MetasComponent,
     OrientacoesComponent,
     CondutasComponent,
+    DashboardComponent,
     FichaIdentificacaoComponent,
-    DashboardComponent
+    DadospacienteComponent,
+    IdentificacaoComponent,
+    ContatoComponent,
+    FiliacaoComponent,
+    EnderecoComponent
   ],
   imports: [
     BrowserModule,
