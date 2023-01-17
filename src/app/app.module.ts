@@ -33,6 +33,8 @@ import { IdentificacaoComponent } from './ficha-identificacao/identificacao/iden
 import { ContatoComponent } from './ficha-identificacao/contato/contato.component';
 import { FiliacaoComponent } from './ficha-identificacao/filiacao/filiacao.component';
 import { EnderecoComponent } from './ficha-identificacao/endereco/endereco.component';
+import { MatButtonModule } from '@angular/material/button';
+import { FichaIdentImpressaoComponent } from './ficha-ident-impressao/ficha-ident-impressao.component';
 
 
 @NgModule({
@@ -64,7 +66,8 @@ import { EnderecoComponent } from './ficha-identificacao/endereco/endereco.compo
     IdentificacaoComponent,
     ContatoComponent,
     FiliacaoComponent,
-    EnderecoComponent
+    EnderecoComponent,
+    FichaIdentImpressaoComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +75,8 @@ import { EnderecoComponent } from './ficha-identificacao/endereco/endereco.compo
     BrowserAnimationsModule,
     MatTabsModule,
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

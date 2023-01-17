@@ -2,9 +2,24 @@ div {
   border-radius: 5px;
 }
 
-label,
-input {
+label{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  text-align: justify;
+  letter-spacing: -0.8px; /*espacamento do texto se reduzir o navegador o texto cabe*/
+  line-height: 6px;
   padding: 0%;
+}
+
+
+input {
+  padding: 1%;
+  font-size: 12px;
+  margin: 0px;
+  letter-spacing: -0.8px; /*espacamento do texto*/
+  line-height: 6px;
+
 }
 
 .fundo-cor {
