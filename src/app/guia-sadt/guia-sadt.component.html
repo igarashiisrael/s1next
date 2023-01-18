@@ -1,0 +1,234 @@
+
+<body>
+<style>
+
+  .no-print{
+        display: none !important;
+    }
+    
+    @media print{
+        .no-print{
+            display: none !important;
+        }
+        .only-print{
+            display: grid;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+
+</style>
+
+<div class="container only-print">
+    <div class="row bg-light d-flex align-items-center ">
+      <div class="printPDF ">
+               
+        <form>
+            <div class="col-sm-20">
+        <p></p>
+            <p class="p1 "><strong>GUIA</strong></p>
+                    <div class="row bg-light d-flex align-items-center" id="printPDF">
+        <div>
+          <div class="header only-print">
+            <div class="row" id="logo">
+              <div class="col themed-grid-col deco id=logo"><h1>LOGO CONVENIO</h1> </div>
+              <div class="col-md-10 themed-grid-col id=title ">
+                <h1 style="text-align: center">GUIA DE SERVIÇO PROFISSIONAL / SERVIÇO AUXILIAR
+                  DE<br>DIAGNÓSTICO E TERAPIA - SP/SADT</h1>
+              </div>
+              <div class="col-1 themed-grid-col"><h1> pg.1</h1></div>
+            </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md themed-grid-col"><h3>1 - Registro ANS</h3></div>
+          <div class="col-md-9 themed-grid-col"><h3>3 - Número da Guia Principal</h3></div>
+        </div>
+        <div class="row">
+          <div class="col themed-grid-col"><h3>4 - Data da Autorização</h3></div>
+          <div class="col themed-grid-col"><h3>5 - Senha</h3></div>
+          <div class="col themed-grid-col"><h3>6 - Data de Validade da Senha</h3></div>
+          <div class="col themed-grid-col"><h3>7 - Número da Guia Atribuído pela Operadora</h3></div>
+        </div>
+        <div>
+        </div>
+        <div class="row">
+          <h2 style="text-align: left">Dados do Beneficiário</h2>
+
+          <div class="col-md themed-grid-col"><h3>8 - Número da Carteira</h3></div>
+          <div class="col-md themed-grid-col"><h3>9 - Validade da Carteira</h3></div>
+          <div class="col-md-6 themed-grid-col"><h3>10 - Nome</h3></div>
+          <div class="col-md themed-grid-col"><h3>11 - Cartão Nacional de Saúde</h3></div>
+          <div class="col-md themed-grid-col"><h3>12 - Atendimento a RN</h3></div>
+        </div>
+        <div>
+        </div>
+        <div class="row">
+          <h2 style="text-align: left"> Dados do Solicitante</h2>
+
+          <div class="col-md themed-grid-col"><h3>13 - Código na Operadora</h3></div>
+          <div class="col-md-10 themed-grid-col"><h3>14 - Nome do Contratado</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 themed-grid-col"><h3>15 - Nome do Profissional Solicitante</h3></div>
+          <div class="col-md themed-grid-col"><h3>16 - Conselho Profissional</h3></div>
+          <div class="col-md themed-grid-col"><h3>17 - Número no Conselho</h3></div>
+          <div class="col-md themed-grid-col"><h3>18 - UF</h3></div>
+          <div class="col-md themed-grid-col"><h3>19 - Código CBO</h3></div>
+          <div class="col-md-3 themed-grid-col"><h3>20 - Assinatura do Profissional Solicitante</h3></div>
+        </div>
+        <div>
+
+        </div>
+        <div class="row">
+          <h2 style="text-align: left">Dados da Solicitação / Procedimentos ou Itens Assistenciais
+            Solicitado</h2>
+          <div class="col-md themed-grid-col"><h3>21 - Caráter do atendimento</h3></div>
+          <div class="col-md themed-grid-col"><h3>22 - Data da Solicitação</h3></div>
+          <div class="col-md themed-grid-col"><h3>23 - Indicação Clínica</h3> </div>
+        </div>
+        <div class="row">
+          <div class="div-num">
+            <div class="div-num"></div>
+
+            <div class="div-num"><h4>1</h4></div>
+            <div class="div-num"><h4>2</h4></div>
+            <div class="div-num"><h4>3</h4></div>
+            <div class="div-num"><h4>4</h4></div>
+            <div class="div-num"><h4>5</h4></div>
+          </div>
+          <div class="col themed-grid-col"><h3>24 - Tabela Aut.</h3> </div>
+          <div class="col themed-grid-col"><h3>25 - Código do Procedimento </h3></div>
+          <div class="col-6 themed-grid-col"><h3>26 - Descrição </h3></div>
+          <div class="col themed-grid-col"><h3>27 - Qtde. Solic. </h3></div>
+          <div class="col  themed-grid-col"><h3>28 - Qtde.</h3>  </div>
+        </div>
+
+        <div>
+        </div>
+        <div class="row">
+          <h2 style="text-align: left">Dados do Contratante Executante</h2>
+
+          <div class="col-md themed-grid-col"><h3>29 - Código na Operadora</h3></div>
+          <div class="col-md themed-grid-col"><h3>30 - Nome do Contratado </h3></div>
+          <div class="col-md themed-grid-col"><h3>31 - Código CNES </h3></div>
+        </div>
+        <div class="row">
+          <div class="col-md themed-grid-col"><h3>32 - Tipo de Atendimento</h3></div>
+          <div class="col-md themed-grid-col"><h3>33 - Indicação de Acidente (acidente ou doença relacionada)</h3> </div>
+          <div class="col-md themed-grid-col"><h3>34 - Tipo de Consulta </h3></div>
+          <div class="col-md themed-grid-col"><h3>35 - Motivo do Encerramento do Atendimento</h3> </div>
+        </div>
+        <div class="row">
+          <div class="div-num">
+            <div class="div-num"></div>
+            <div class="div-num"><h4>1</h4></div>
+            <div class="div-num"><h4>2</h4></div>
+            <div class="div-num"><h4>3</h4></div>
+            <div class="div-num"><h4>4</h4></div>
+            <div class="div-num"><h4>5</h4></div>
+          </div>
+          <div class="col themed-grid-col"><h3>36 - Data</h3></div>
+          <div class="col-1 themed-grid-col"><h3>37-Hora Inicial</h3></div>
+          <div class=" div-a ">
+            <div class="div-a "></div>
+            <div class="div-a "><h4>a</h4></div>
+            <div class="div-a "><h4>a</h4></div>
+            <div class="div-a "><h4>a</h4></div>
+            <div class="div-a "><h4>a</h4></div>
+          </div>
+          <div class="col-1 themed-grid-col"><h3>38 - Hora Final</h3></div>
+          <div class="col themed-grid-col"><h3>39 - Tabela</h3></div>
+          <div class="col-1 themed-grid-col"><h3>40 - Cód do Proced.</h3></div>
+          <div class="col-3 themed-grid-col"><h3>41 - Descrição</h3></div>
+          <div class="col themed-grid-col"><h3>42 - Qtde.</h3></div>
+          <div class="col themed-grid-col"><h3>43 - Via</h3></div>
+          <div class="col themed-grid-col"><h3>44 - Tec.</h3></div>
+          <div class="col-1 themed-grid-col"><h3>45 - Fator Red. Acresc.</h3></div>
+          <div class="col-1  themed-grid-col"><h3>46 - Valor Unitário (R$)</h3></div>
+          <div class="col-1 themed-grid-col"><h3>47 - Valor Total (R$)</h3></div>
+        </div>
+        <div>
+        </div>
+        <div class="row">
+          <h2 style="text-align: left">Identificação do(s) Profissional(is) Executante(s)</h2>
+
+          <div class="col-md themed-grid-col"><h3>48 - Seq. Ref.</h3>
+            <div class="col  themed-grid-col"> </div>
+
+          </div>
+          <div class="col-md themed-grid-col"><h3>49 - Grau Part.</h3>
+            <div class="col  themed-grid-col"> </div>
+
+          </div>
+          <div class="col-md themed-grid-col"><h3>50 - Código na Operadora/CPF</h3>
+            <div class="col  themed-grid-col"> </div>
+
+          </div>
+          <div class="col-md themed-grid-col"><h3>51 - Nome do Profissional</h3>
+            <div class="col  themed-grid-col"> </div>
+
+          </div>
+          <div class="col-md themed-grid-col"><h3>52 - Conselho Prof.</h3>
+            <div class="col  themed-grid-col"> </div>
+
+          </div>
+          <div class="col-md themed-grid-col"><h3>53 - Número do Conselho</h3>
+            <div class="col  themed-grid-col"> </div>
+          </div>
+          <div class="col-1 themed-grid-col"><h3>54 - UF</h3>
+            <div class="col themed-grid-col"> </div>
+
+          </div>
+          <div class="col-md themed-grid-col"><h3>55 - Código CBO</h3>
+            <div class="col  themed-grid-col"> </div>
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md themed-grid-col"><h3>56 - Data de Realização de Procedimentos em Série</h3>
+            <div class="col  themed-grid-col"> </div>
+
+          </div>
+          <div class="col-md themed-grid-col"><h3>57 - Assinatura do Beneficiário</h3>
+            <div class="col  themed-grid-col"> </div>
+          </div>
+        </div>
+
+        <div>
+        </div>
+        <div class="row">
+          <h2 style="text-align: left">Observação / Justificativa</h2>
+
+          <div class="col-md-12 themed-grid-col"><h3>58 - Observação / Justificativa</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-md themed-grid-col"><h3>59 - Total de Procedimentos (R$)</h3></div>
+          <div class="col-md themed-grid-col"><h3>60 - Total de Taxas e Aluguéis (R$)</h3></div>
+          <div class="col-md themed-grid-col"><h3>61 - Total de Materiais (R$)</h3></div>
+          <div class="col-md themed-grid-col"><h3>62 - Total de OPME (R$)</h3></div>
+          <div class="col-md themed-grid-col"><h3>63 - Total de Medicamentos (R$)</h3></div>
+          <div class="col-md themed-grid-col"><h3>64 - Total de Gases Medicinais (R$)</h3></div>
+          <div class="col-md themed-grid-col"><h3>65 - Total Geral (R$)</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-md themed-grid-col"><h3>66 - Assinatura do Responsável pela Autorização</h3></div>
+          <div class="col-md themed-grid-col"><h3>67 - Assinatura do Beneficiário ou Responsável</h3></div>
+          <div class="col-md themed-grid-col"><h3>68 - Assinatura do Contratado</h3></div>
+        </div>
+    
+    </div>
+            
+    </div>
+    <button mat-raised-button onclick="window.print()">
+        Imprimir este form
+                        </button>
+            </div>
+        </form></div></div></div></body>
+
+
+        

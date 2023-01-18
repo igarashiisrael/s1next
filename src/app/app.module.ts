@@ -69,7 +69,8 @@ import { LaudoFisioImpressaoComponent } from './laudo-fisio-impressao/laudo-fisi
     FiliacaoComponent,
     EnderecoComponent,
     FichaIdentImpressaoComponent,
-    LaudoFisioImpressaoComponent
+    LaudoFisioImpressaoComponent,
+    
   ],
   imports: [
     BrowserModule,

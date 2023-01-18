@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FichaIdentificacaoComponent } from './ficha-identificacao/ficha-identificacao.component';
 import { FichaIdentImpressaoComponent } from './ficha-ident-impressao/ficha-ident-impressao.component';
 import { LaudoFisioImpressaoComponent } from './laudo-fisio-impressao/laudo-fisio-impressao.component';
+import { GuiaSadtComponent } from './guia-sadt/guia-sadt.component';
 
 
 const routes: Routes = [
@@ -14,8 +15,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'ficha-identificacao',component:FichaIdentificacaoComponent},
   { path: 'ficha-ident-impressao',component:FichaIdentImpressaoComponent},
-  { path: 'laudo-fisio-impressao',component:LaudoFisioImpressaoComponent}
-
+  { path: 'laudo-fisio-impressao',component:LaudoFisioImpressaoComponent},
+  { path: 'guia-sadt',component:GuiaSadtComponent}
 
 
   
